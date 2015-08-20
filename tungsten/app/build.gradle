@@ -4,9 +4,11 @@ dependencies {
     compile project(':calculator:protocol')
     compile project(':tungsten:protocol')
 
+    compile "org.springframework.boot:spring-boot-configuration-processor"
     compile 'org.springframework.boot:spring-boot-starter-web'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
-    
     testCompile project(':calculator:app')
 }
+
+compileJava.dependsOn(processResources)

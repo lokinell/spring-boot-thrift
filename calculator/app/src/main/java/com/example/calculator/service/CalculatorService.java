@@ -1,8 +1,8 @@
 package com.example.calculator.service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class CalculatorService {
     
     public int add(int num1, int num2) {

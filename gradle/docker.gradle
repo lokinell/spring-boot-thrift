@@ -1,0 +1,14 @@
+apply plugin: 'docker'
+
+group = "spring-boot-thrift"
+
+docker {
+    baseImage = "java:latest"
+}
+
+task calculatorDocker(type: Docker) {
+    applicationName = "calculator"
+    addFile("$buildDir/install/app", "/app")
+    exposePort(8080)
+    defaultCommand(['/app/bin/app'])
+}

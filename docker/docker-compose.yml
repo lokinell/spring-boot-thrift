@@ -1,0 +1,5 @@
+calculator:
+
+  image: spring-boot-thrift/app
+  ports:
+     - "8080:8080"

@@ -1,4 +1,5 @@
 apply plugin: 'spring-boot'
+apply from: "$rootDir/gradle/docker.gradle"
 
 dependencies {
     compile project(':calculator:protocol')
@@ -7,3 +8,4 @@ dependencies {
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
+

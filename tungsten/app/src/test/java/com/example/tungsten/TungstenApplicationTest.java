@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = {TungstenApplication.class, CalculatorApplication.class})
 @WebAppConfiguration
-@IntegrationTest({"server.port:9000", "tungsten.calculator_endpoint:http://localhost:9000/calculator/"})
+@IntegrationTest({"server.port:8080", "tungsten.calculator_endpoint:http://192.168.99.100:8080/calculator/"})
 public class TungstenApplicationTest {
     
     @Autowired
